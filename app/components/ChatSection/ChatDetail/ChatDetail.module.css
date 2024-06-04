@@ -1,0 +1,135 @@
+.text_gray {
+  color: #535353;
+}
+
+.candidate_wrap {
+  background-color: #f8f8f8;
+}
+.candidate_status {
+  width: 224px;
+  border: 1px solid #d8d8d8;
+  padding: 12px;
+  color: #bababa;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress_wrap {
+  background-color: #f0f0f0;
+  display: flex;
+  width: 370px;
+  font-size: 12px;
+  align-items: center;
+  color: #5e5e5e;
+}
+.progress_wrap .text {
+  border-right: 1px solid #d8d8d8;
+}
+.progress {
+  padding: 12px;
+}
+.progress div {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.progress div:not(:last-child) {
+  background-color: #43af57;
+}
+.progress div:last-child {
+  background-color: #ffb82e;
+}
+
+.progress div:not(:last-child):after {
+  content: "";
+  width: 17px;
+  height: 2px;
+  display: block;
+  background-color: #43af57;
+  left: 19.5px;
+  top: 7px;
+  position: absolute;
+}
+
+.message {
+  padding: 24px;
+}
+.message_wrap {
+  height: calc(-328px + 100vh);
+  overflow-y: scroll;
+  flex-direction: column-reverse;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.message_box {
+  height: 92px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #d8d8d8;
+  outline: none;
+  resize: none;
+}
+
+.button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 11px 0;
+  padding-left: 16px;
+  padding-right: 18px;
+  background-color: #43af57;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.sender_message {
+  width: 432px;
+  padding: 12px;
+  /* margin: 20px 25px 0; */
+  @media (max-width: 767px) {
+    width: 85%;
+  }
+}
+
+.sender_left {
+  align-self: flex-start;
+  background-color: #f2f2f2;
+  border-radius: 8px 8px 8px 0px;
+}
+.sender_right {
+  align-self: flex-end;
+  border-radius: 8px 8px 0 8px;
+
+  background-color: #242429;
+}
+.sender_right p,
+.sender_right span {
+  color: #fff;
+  word-wrap: break-word;
+}
+.sender_right span,
+.sender_left span {
+  float: right;
+  font-size: 12px;
+  color: #a4a4a4;
+}
+.sender_left p {
+  color: #303030;
+  word-wrap: break-word;
+}
+
+.message_time {
+  margin: 1rem;
+}
+.message_time span {
+  background-color: #f8f8f8;
+  padding: 10px 19px;
+  border-radius: 24px;
+}
